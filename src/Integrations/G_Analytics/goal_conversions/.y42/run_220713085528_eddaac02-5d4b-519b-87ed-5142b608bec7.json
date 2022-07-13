@@ -1,0 +1,138 @@
+{
+  "request_id": "220713085528_eddaac02-5d4b-519b-87ed-5142b608bec7",
+  "status": "ready",
+  "request": {
+    "source_credentials": "9dfdd830-1fdf-4a89-a1d8-70c859a43a79",
+    "target_credentials": "808cd5c2-eed8-4cb4-81e0-f0cd8137d9f3",
+    "source_settings": {
+      "$schema": "https://s.y42.com/integrations/google-analytics/0.0.0/source.json",
+      "start_date": "2022-01-01T00:00:00Z",
+      "parent_id": "258968600"
+    },
+    "table_settings": {
+      "$schema": "https://s.y42.com/integrations/google-analytics/0.0.0/table",
+      "columns": [
+        "ga_date",
+        "ga_channelGrouping",
+        "ga_source",
+        "ga_medium",
+        "ga_campaign",
+        "ga_country",
+        "ga_goal1Completions",
+        "ga_goal2Completions",
+        "ga_goal3Completions",
+        "ga_goal4Completions",
+        "ga_goal5Completions",
+        "ga_goalCompletionsAll",
+        "report_start_date",
+        "report_end_date"
+      ],
+      "import": "goal_conversions"
+    },
+    "created_at": "2022-07-13T08:55:28.745987+00:00",
+    "target": {
+      "storage": {
+        "type": "githubapp",
+        "path": "/src/Integrations/G_Analytics/goal_conversions/",
+        "id": "5:f6f2b079-3139-4afc-abc3-b986f3242ce8",
+        "branch": "main"
+      },
+      "info": {
+        "app_id": "25917863",
+        "owner": "Group-Online-collaboration",
+        "repo": "y42_client_D0038897986",
+        "commit_sha": "003754e93ceb9e9a2cf1be55ddeb67da29a3796e"
+      }
+    },
+    "context": {
+      "company_id": 5,
+      "company_slug": "grouponline",
+      "triggered_by_type": "user",
+      "triggered_by_id": "25",
+      "trial": false
+    }
+  },
+  "created_at": "2022-07-13T08:55:28.745987+00:00",
+  "details": {
+    "invalid_rows": 0,
+    "export_finished_at": "2022-07-13T08:57:12.737951+00:00",
+    "external_state": {
+      "goal_conversions": "2022-07-11",
+      "schema_hash": "e87490b868afd4e4b1792a506e8d1b34"
+    },
+    "write_disposition": "TRUNCATE",
+    "external_id": "01a59359-0101-52be-0001-2c9200a81d66",
+    "storage_file": "azure://y42snowflake.blob.core.windows.net/y42-container/userUploads/v2/tap-google-analytics/357c210e-48af-4978-bd0b-6841e85da5ae",
+    "partial": false,
+    "import_finished_at": "2022-07-13T08:57:30.398606+00:00",
+    "row_count": 332,
+    "current_import_row_count": 332,
+    "size_in_bytes": 7680,
+    "columns": [
+      {
+        "field_name": "ga_goalcompletionsall",
+        "data_type": "FLOAT",
+        "external_data_type": "NUMBER"
+      },
+      {
+        "field_name": "ga_goal4completions",
+        "data_type": "STRING",
+        "external_data_type": "TEXT"
+      },
+      {
+        "field_name": "ga_goal5completions",
+        "data_type": "STRING",
+        "external_data_type": "TEXT"
+      },
+      {
+        "field_name": "ga_goal3completions",
+        "data_type": "STRING",
+        "external_data_type": "TEXT"
+      },
+      {
+        "field_name": "ga_date",
+        "data_type": "DATE",
+        "external_data_type": "DATE"
+      },
+      {
+        "field_name": "ga_goal1completions",
+        "data_type": "STRING",
+        "external_data_type": "TEXT"
+      },
+      {
+        "field_name": "ga_channelgrouping",
+        "data_type": "STRING",
+        "external_data_type": "TEXT"
+      },
+      {
+        "field_name": "ga_campaign",
+        "data_type": "STRING",
+        "external_data_type": "TEXT"
+      },
+      {
+        "field_name": "ga_country",
+        "data_type": "STRING",
+        "external_data_type": "TEXT"
+      },
+      {
+        "field_name": "ga_goal2completions",
+        "data_type": "STRING",
+        "external_data_type": "TEXT"
+      },
+      {
+        "field_name": "ga_medium",
+        "data_type": "STRING",
+        "external_data_type": "TEXT"
+      },
+      {
+        "field_name": "ga_source",
+        "data_type": "STRING",
+        "external_data_type": "TEXT"
+      }
+    ],
+    "table_name": "220713085528_eddaac02-5d4b-519b-87ed-5142b608bec7",
+    "external_url": "https://leailmf-bb09357.snowflakecomputing.com/console#/data/tables/detail?databaseName=Y42_DATA&schemaName=PUBLIC&tableName=220713085528_eddaac02-5d4b-519b-87ed-5142b608bec7"
+  },
+  "finished_at": "2022-07-13T08:57:30.398745+00:00",
+  "_signature": "FHrrHk/AX1otc+rLolYANPwMe8kycFAAN4JJ4mbBzLCOG9boswr+f3oShcqb46Odn5MHtquemOfgQ4Ut16wHCg=="
+}
